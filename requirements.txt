@@ -1,0 +1,7 @@
+matplotlib
+jupyter
+tqdm
+elasticsearch
+pygds>=0.2.0
+pymilvus
+sentence-transformers
