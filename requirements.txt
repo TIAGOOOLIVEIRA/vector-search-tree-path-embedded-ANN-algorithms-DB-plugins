@@ -3,6 +3,8 @@ tqdm
 elasticsearch
 pygds>=0.2.0
 pymilvus
+scipy
+faiss-gpu
 sentence-transformers
 elasticsearch-dsl
 click >= 7.0
