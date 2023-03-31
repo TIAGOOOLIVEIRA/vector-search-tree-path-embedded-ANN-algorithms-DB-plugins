@@ -4,7 +4,6 @@ elasticsearch
 pygds>=0.2.0
 pymilvus
 scipy
-dask-cuda
 faiss-gpu
 sentence-transformers
 elasticsearch-dsl
