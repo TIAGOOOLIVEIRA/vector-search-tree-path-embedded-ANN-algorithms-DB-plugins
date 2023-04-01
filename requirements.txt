@@ -7,6 +7,7 @@ scipy
 faiss-gpu
 sentence-transformers
 elasticsearch-dsl
+opensearch-py==2.2.0
 click >= 7.0
 cloudpickle >= 1.5.0
 dask == 2023.1.1
