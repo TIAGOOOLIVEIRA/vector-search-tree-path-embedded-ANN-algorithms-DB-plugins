@@ -1,6 +1,7 @@
 jupyterlab
 matplotlib
 tqdm
+trange
 elasticsearch
 pygds>=0.2.0
 pymilvus
