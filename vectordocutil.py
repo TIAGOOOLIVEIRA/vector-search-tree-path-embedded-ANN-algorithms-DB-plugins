@@ -57,3 +57,7 @@ def display_hits_horizontal(res):
         html += f"<td><img src=\"{s.get('imUrl')}\" width=128 /><p>{s.get('asin')}, {hit.get('_score')}</p></td>"
     html += "</tr></table>"
     display(HTML(html))
+
+def listToChuncks(pagesize, listsource):
+    return [listsource[i:i+pagesize] for i in range(0, len(listsource), pagesize)]
+
