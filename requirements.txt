@@ -1,3 +1,5 @@
+numpy
+ipython
 jupyterlab
 matplotlib
 tqdm
@@ -6,7 +8,8 @@ elasticsearch
 pygds>=0.2.0
 pymilvus
 scipy
-faiss-gpu
+torch
+faiss-cpu
 sentence-transformers
 elasticsearch-dsl
 opensearch-py==2.2.0
@@ -26,4 +29,7 @@ tornado >= 6.0.3
 urllib3 >= 1.24.3
 zict >= 2.1.0
 Faker
+bokeh
 graphviz
+dask[distributed]
+faiss-gpu
