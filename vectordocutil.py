@@ -70,7 +70,7 @@ def getRecFromList(parentID, cdata):
         if rec['id'] == parentID:
             return rec
 
-# To flatten the tree ontology concepts tree structure        
+# To flatten the tree ontology concepts tree structure blabla        
 def flatten(rec, cdata):
     flatlist = []
     for element in rec['child_ids']:
