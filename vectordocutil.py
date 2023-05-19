@@ -58,6 +58,29 @@ def display_hits_horizontal(res):
     html += "</tr></table>"
     display(HTML(html))
 
+# To paginate over a list
 def listToChuncks(pagesize, listsource):
     return [listsource[i:i+pagesize] for i in range(0, len(listsource), pagesize)]
 
+
+# To fetch record by id 
+def getRecFromList(parentID, cdata):
+    #print(parentID)
+    for rec in cdata:
+        if rec['id'] == parentID:
+            return rec
+
+# To flatten the tree ontology concepts tree structure blabla        
+def flatten(rec, cdata):
+    flatlist = []
+    for element in rec['child_ids']:
+        el = getRecFromList(element, cdata)
+        #print(el)
+        if type(el['child_ids']) == list and len(el['child_ids'])>0:
+            flatlist += flatten(el, cdata)
+        else:
+            #print('---', rec['name'])
+            value = el['name']
+            if value not in flatlist:
+                flatlist.append(value)#el['name']
+    return flatlist
